@@ -1,0 +1,93 @@
+SAFEDRIVE INSURANCE CLAIMS — POWER BI DAX MEASURES
+=================================================
+
+Create each item below using Modeling > New measure.
+
+Total Policies =
+DISTINCTCOUNT ( PowerBI_PolicyPortfolio[policy_id] )
+
+Total Claims =
+SUM ( PowerBI_PolicyPortfolio[is_claim] )
+
+Overall Claim Rate =
+DIVIDE ( [Total Claims], [Total Policies], 0 )
+
+Scored Policies =
+DISTINCTCOUNT ( PowerBI_ModelPredictions[policy_id] )
+
+Predicted Claim Policies =
+CALCULATE (
+    DISTINCTCOUNT ( PowerBI_ModelPredictions[policy_id] ),
+    PowerBI_ModelPredictions[predicted_class] = 1
+)
+
+Average Claim Probability =
+AVERAGE ( PowerBI_ModelPredictions[claim_probability] )
+
+High Risk Policies =
+CALCULATE (
+    DISTINCTCOUNT ( PowerBI_ModelPredictions[policy_id] ),
+    PowerBI_ModelPredictions[risk_level] IN { "High", "Very High" }
+)
+
+High Risk Share =
+DIVIDE ( [High Risk Policies], [Scored Policies], 0 )
+
+Actual Claims in Scored Set =
+SUM ( PowerBI_ModelPredictions[actual_outcome] )
+
+Claim Rate in Scored Set =
+DIVIDE (
+    [Actual Claims in Scored Set],
+    [Scored Policies],
+    0
+)
+
+Average NCAP Rating =
+AVERAGE ( PowerBI_PolicyPortfolio[ncap_rating] )
+
+Policies by Risk Level =
+DISTINCTCOUNT ( PowerBI_ModelPredictions[policy_id] )
+
+Actual Claim Rate by Risk Level =
+DIVIDE (
+    SUM ( PowerBI_ModelPredictions[actual_outcome] ),
+    DISTINCTCOUNT ( PowerBI_ModelPredictions[policy_id] ),
+    0
+)
+
+Best CV ROC-AUC =
+MAX ( PowerBI_ModelComparison[ROC_AUC] )
+
+Best CV F1 Score =
+MAX ( PowerBI_ModelComparison[F1_Score] )
+
+
+FORMATTING
+-----------
+- Overall Claim Rate: Percentage
+- Average Claim Probability: Percentage
+- High Risk Share: Percentage
+- Claim Rate in Scored Set: Percentage
+- Actual Claim Rate by Risk Level: Percentage
+- Average NCAP Rating: Decimal number
+
+
+DATA TYPES
+----------
+- policy_id: same data type in both policy and prediction tables
+- is_claim: Whole Number (0/1)
+- actual_outcome: Whole Number (0/1)
+- predicted_class: Whole Number (0/1)
+- claim_probability: Decimal Number
+- risk_level: Text
+- ncap_rating: numeric, if present
+
+
+RELATIONSHIP
+------------
+PowerBI_PolicyPortfolio[policy_id] (one)
+    -> PowerBI_ModelPredictions[policy_id] (many)
+
+Use single-direction filtering from PolicyPortfolio to ModelPredictions.
+Confirm policy_id is unique in the portfolio table.

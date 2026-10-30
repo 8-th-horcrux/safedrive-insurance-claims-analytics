@@ -1,0 +1,100 @@
+feature,mean_abs_shap,mean_signed_shap,direction
+num__cylinder * policy_tenure,0.09534766722478166,-0.0148420911535015,Negative contribution on average
+num__age_of_car,0.03561723927918005,-0.005413249785371206,Negative contribution on average
+num__height,0.011441553571582296,-0.006762116201609411,Negative contribution on average
+num__population_density,0.0033802654175562547,-0.0009647396182280319,Negative contribution on average
+num__age_of_policyholder,0.0,0.0,Approximately neutral
+num__airbags,0.0,0.0,Approximately neutral
+num__policy_tenure,0.0,0.0,Approximately neutral
+num__is_adjustable_steering,0.0,0.0,Approximately neutral
+num__is_tpms,0.0,0.0,Approximately neutral
+num__is_parking_sensors,0.0,0.0,Approximately neutral
+num__make,0.0,0.0,Approximately neutral
+num__is_parking_camera,0.0,0.0,Approximately neutral
+num__displacement,0.0,0.0,Approximately neutral
+num__gear_box,0.0,0.0,Approximately neutral
+num__cylinder,0.0,0.0,Approximately neutral
+num__turning_radius,0.0,0.0,Approximately neutral
+num__length,0.0,0.0,Approximately neutral
+num__width,0.0,0.0,Approximately neutral
+num__is_esc,0.0,0.0,Approximately neutral
+num__is_front_fog_lights,0.0,0.0,Approximately neutral
+num__is_rear_window_wiper,0.0,0.0,Approximately neutral
+num__is_rear_window_washer,0.0,0.0,Approximately neutral
+num__is_rear_window_defogger,0.0,0.0,Approximately neutral
+num__is_brake_assist,0.0,0.0,Approximately neutral
+num__is_power_door_locks,0.0,0.0,Approximately neutral
+num__is_central_locking,0.0,0.0,Approximately neutral
+num__is_power_steering,0.0,0.0,Approximately neutral
+num__is_driver_seat_height_adjustable,0.0,0.0,Approximately neutral
+num__is_day_night_rear_view_mirror,0.0,0.0,Approximately neutral
+num__is_ecw,0.0,0.0,Approximately neutral
+num__is_speed_alert,0.0,0.0,Approximately neutral
+num__ncap_rating,0.0,0.0,Approximately neutral
+num__max_power_bhp,0.0,0.0,Approximately neutral
+num__max_torque_nm,0.0,0.0,Approximately neutral
+num__gross_weight,0.0,0.0,Approximately neutral
+num__safety_equipment_count,0.0,0.0,Approximately neutral
+num__power_to_weight,0.0,0.0,Approximately neutral
+num__High_Risk_Driver_Flag,0.0,0.0,Approximately neutral
+num__policy_tenure * width,0.0,0.0,Approximately neutral
+cat__area_cluster_C1,0.0,0.0,Approximately neutral
+cat__area_cluster_C10,0.0,0.0,Approximately neutral
+cat__area_cluster_C11,0.0,0.0,Approximately neutral
+cat__area_cluster_C12,0.0,0.0,Approximately neutral
+cat__area_cluster_C13,0.0,0.0,Approximately neutral
+cat__area_cluster_C14,0.0,0.0,Approximately neutral
+cat__area_cluster_C15,0.0,0.0,Approximately neutral
+cat__area_cluster_C16,0.0,0.0,Approximately neutral
+cat__area_cluster_C17,0.0,0.0,Approximately neutral
+cat__area_cluster_C18,0.0,0.0,Approximately neutral
+cat__area_cluster_C19,0.0,0.0,Approximately neutral
+cat__area_cluster_C2,0.0,0.0,Approximately neutral
+cat__area_cluster_C20,0.0,0.0,Approximately neutral
+cat__area_cluster_C21,0.0,0.0,Approximately neutral
+cat__area_cluster_C22,0.0,0.0,Approximately neutral
+cat__area_cluster_C3,0.0,0.0,Approximately neutral
+cat__area_cluster_C4,0.0,0.0,Approximately neutral
+cat__area_cluster_C5,0.0,0.0,Approximately neutral
+cat__area_cluster_C6,0.0,0.0,Approximately neutral
+cat__area_cluster_C7,0.0,0.0,Approximately neutral
+cat__area_cluster_C8,0.0,0.0,Approximately neutral
+cat__area_cluster_C9,0.0,0.0,Approximately neutral
+cat__segment_A,0.0,0.0,Approximately neutral
+cat__segment_B1,0.0,0.0,Approximately neutral
+cat__segment_B2,0.0,0.0,Approximately neutral
+cat__segment_C1,0.0,0.0,Approximately neutral
+cat__segment_C2,0.0,0.0,Approximately neutral
+cat__segment_Utility,0.0,0.0,Approximately neutral
+cat__model_M1,0.0,0.0,Approximately neutral
+cat__model_M10,0.0,0.0,Approximately neutral
+cat__model_M11,0.0,0.0,Approximately neutral
+cat__model_M2,0.0,0.0,Approximately neutral
+cat__model_M3,0.0,0.0,Approximately neutral
+cat__model_M4,0.0,0.0,Approximately neutral
+cat__model_M5,0.0,0.0,Approximately neutral
+cat__model_M6,0.0,0.0,Approximately neutral
+cat__model_M7,0.0,0.0,Approximately neutral
+cat__model_M8,0.0,0.0,Approximately neutral
+cat__model_M9,0.0,0.0,Approximately neutral
+cat__fuel_type_CNG,0.0,0.0,Approximately neutral
+cat__fuel_type_Diesel,0.0,0.0,Approximately neutral
+cat__fuel_type_Petrol,0.0,0.0,Approximately neutral
+cat__engine_type_1.0 SCe,0.0,0.0,Approximately neutral
+cat__engine_type_1.2 L K Series Engine,0.0,0.0,Approximately neutral
+cat__engine_type_1.2 L K12N Dualjet,0.0,0.0,Approximately neutral
+cat__engine_type_1.5 L U2 CRDi,0.0,0.0,Approximately neutral
+cat__engine_type_1.5 Turbocharged Revotorq,0.0,0.0,Approximately neutral
+cat__engine_type_1.5 Turbocharged Revotron,0.0,0.0,Approximately neutral
+cat__engine_type_F8D Petrol Engine,0.0,0.0,Approximately neutral
+cat__engine_type_G12B,0.0,0.0,Approximately neutral
+cat__engine_type_K Series Dual jet,0.0,0.0,Approximately neutral
+cat__engine_type_K10C,0.0,0.0,Approximately neutral
+cat__engine_type_i-DTEC,0.0,0.0,Approximately neutral
+cat__rear_brakes_type_Disc,0.0,0.0,Approximately neutral
+cat__rear_brakes_type_Drum,0.0,0.0,Approximately neutral
+cat__transmission_type_Automatic,0.0,0.0,Approximately neutral
+cat__transmission_type_Manual,0.0,0.0,Approximately neutral
+cat__steering_type_Electric,0.0,0.0,Approximately neutral
+cat__steering_type_Manual,0.0,0.0,Approximately neutral
+cat__steering_type_Power,0.0,0.0,Approximately neutral

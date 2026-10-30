@@ -1,0 +1,16 @@
+__pycache__/
+.venv/
+venv/
+.env
+.streamlit/secrets.toml
+*.pyc
+.DS_Store
+.ipynb_checkpoints/
+mlflow_*.db
+dataset*.csv
+full_dataset_with_test_predictions*.csv
+PowerBI_PolicyPortfolio*.csv
+PowerBI_ScoredPolicyDataset*.csv
+prediction_output*.csv
+*.joblib
+*.pkl
